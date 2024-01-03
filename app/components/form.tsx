@@ -24,7 +24,7 @@ export default function Form({ onChatGPTInquiry }: Props) {
         id="task"
         cols={10}
         rows={5}
-        placeholder="Exemplo: preparar a mala da minha viagem de 3 dias para Praga"
+        placeholder="Exemplo: preparar a mala da minha viagem de 3 dias para a praia"
         onChange={(e) => setInput(e.target.value)}
         value={input}
       />

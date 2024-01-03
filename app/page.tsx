@@ -6,9 +6,16 @@ import Tasks from "./components/tasks";
 
 export default function Home() {
   const [tasks, setTasks] = useState([
-    "Limpar o primeiro quarto",
-    "Limpar o segundo quarto",
-    "Limpar o primeiro banheiro",
+    "Escolher roupas adequadas para a praia e clima",
+    "Separar roupa de banho e acessórios de praia",
+    "Escolher calçados adequados",
+    "Separar itens de higiene pessoal",
+    "Separar protetor solar e itens de proteção contra o sol",
+    "Escolher roupas para saídas noturnas ou atividades específicas",
+    "Verificar a necessidade de levar uma toalha de banho",
+    "Separar acessórios como óculos de sol, chapéus, etc.",
+    "Organizar eletrônicos e carregadores",
+    "Fazer uma lista para garantir que nada seja esquecido",
   ]);
   async function handleChatGPTInquiry(input: string) {
     const response = await fetch("/api/task", {
